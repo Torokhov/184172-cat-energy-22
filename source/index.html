@@ -8,10 +8,10 @@
   <body>
     <header class="header">
       <div class="logo-block">
-        <a class="logo-block__icon" href="#">
+        <a class="logo-block__icon">
           <img src="img/logo-icon.svg" alt="логотип" width="34" height="38" />
         </a>
-        <a class="logo-block__text-icon" href="#">
+        <a class="logo-block__text-icon">
           <img
             src="img/logo-text.svg"
             alt="cat energy"
@@ -21,19 +21,21 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="menu-toggle"></button>
+        <button class="menu-toggle" aria-label="меню навигации"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
           <li class="site-list__item site-list__item">
-            <a>Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item">
-            <a>Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
+    </header>
+    <main class="main-container">
       <section class="head-block">
         <h1 class="head-block__main">Функциональное питание для котов</h1>
         <h2 class="head-block__secondary">Занялся собой? Займись котом!</h2>
@@ -44,13 +46,13 @@
           width="280"
           height="270"
         />
-        <a class="head-block__button" href="#">Подобрать программу</a>
+        <a class="head-block__button" href="!#">Подобрать программу</a>
       </section>
-    </header>
-    <main class="main-container">
       <section class="program-block">
         <article class="program-info">
-          <h3 class="program-info__header">Похудение</h3>
+          <h3 class="program-info__header program-info__header--slim">
+            Похудение
+          </h3>
           <p class="program-info__desc">
             Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
@@ -59,7 +61,9 @@
           <a class="program-info__link">Каталог SLIM</a>
         </article>
         <article class="program-info">
-          <h3 class="program-info__header">Набор массы</h3>
+          <h3 class="program-info__header program-info__header--pro">
+            Набор массы
+          </h3>
           <p class="program-info__desc">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -69,19 +73,22 @@
       </section>
       <section class="how-to-block">
         <h2 class="how-to-block__header">Как это работает?</h2>
-        <p class="how-to-block__text">
-          Функциональное питание содержит только полезные питательные вещества.
-        </p>
-        <p class="how-to-block__text">
-          Выпускается в виде порошка, который нужно лишь залить кипятком и
-          готово.
-        </p>
-        <p class="how-to-block__text">
-          Замените один-два приема обычной еды на наше функциональное питание.
-        </p>
-        <p class="how-to-block__text">
-          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-        </p>
+        <ul class="how-to-block__list list-features">
+          <li class="list-features__item list-features__item--leaf">
+            Функциональное питание содержит только полезные питательные
+            вещества.
+          </li>
+          <li class="list-features__item list-features__item--tub">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и
+            готово.
+          </li>
+          <li class="list-features__item list-features__item--eat">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </li>
+          <li class="list-features__item list-features__item--clock">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
       </section>
       <section class="example-block">
         <h2 class="example-block__header">Живой пример</h2>
@@ -112,9 +119,7 @@
             height="232"
           />
           <div class="was-now-block__toggle toggle">
-            <span class="toggle__label">Было</span>
             <input class="toggle__input" type="checkbox" />
-            <span class="toggle__label">Стало</span>
           </div>
         </div>
       </section>
@@ -127,13 +132,7 @@
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </span>
         </address>
-        <img
-          class="location-block__map"
-          src="img/map.jpg"
-          alt="карта"
-          width="320"
-          height="362"
-        />
+        <div class="location-block__map"></div>
       </section>
     </main>
     <footer class="footer">
@@ -145,26 +144,33 @@
           height="24"
         />
       </a>
-      <div class="socials">
-        <a class="socials__link"
-          ><img src="img/icon_vkontakte.svg" alt="vk" width="22" height="16"
-        /></a>
-        <a class="socials__link"
-          ><img
-            src="img/icon_instagram.svg"
-            alt="instagram"
-            width="16"
-            height="16"
-        /></a>
-        <a class="socials__link"
-          ><img
-            src="img/icon_facebook.svg"
-            alt="facebook"
-            width="10"
-            height="16"
-        /></a>
-      </div>
-      <div class="copyright">
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a
+            ><img src="img/icon_vkontakte.svg" alt="vk" width="22" height="16"
+          /></a>
+        </li>
+
+        <li class="socials-list__item">
+          <a
+            ><img
+              src="img/icon_instagram.svg"
+              alt="instagram"
+              width="16"
+              height="16"
+          /></a>
+        </li>
+        <li class="socials-list__item">
+          <a
+            ><img
+              src="img/icon_facebook.svg"
+              alt="facebook"
+              width="10"
+              height="16"
+          /></a>
+        </li>
+      </ul>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
         <img
           class="copyright__logo"
@@ -173,7 +179,7 @@
           width="27"
           height="34"
         />
-      </div>
+      </a>
     </footer>
   </body>
 </html>
