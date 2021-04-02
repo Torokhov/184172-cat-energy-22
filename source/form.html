@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-block">
+        <a class="logo-block__icon">
+          <img src="img/logo-icon.svg" alt="логотип" width="34" height="38" />
+        </a>
+        <a class="logo-block__text-icon">
+          <img
+            src="img/logo-text.svg"
+            alt="cat energy"
+            width="101"
+            height="18"
+          />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="меню навигации"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="form-head">Подбор программы</h1>
+      <form class="programm-form" action="https://echo.htmlacademy.ru">
+        <h2 class="programm-form__head">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </h2>
+        <section class="personal-data">
+          <div class="form-row">
+            <label class="form-row__label" for="name">Имя:*</label>
+            <input
+              class="form-row__input"
+              id="name"
+              name="name"
+              type="text"
+              value="Барсик"
+            />
+          </div>
+          <div class="form-row">
+            <label class="form-row__label" for="weight">Вес (кг):*</label>
+            <input
+              class="form-row__input"
+              id="weight"
+              name="weight"
+              type="text"
+              value="7"
+            />
+          </div>
+          <div class="form-row">
+            <label class="form-row__label" for="age">Возраст (лет):</label>
+            <input
+              class="form-row__input"
+              id="age"
+              name="age"
+              type="text"
+              value="7"
+            />
+          </div>
+        </section>
+        <section class="select-program">
+          <div class="form-row">
+            <input
+              class="form-row__radio form-row__radio--checked"
+              type="radio"
+              name="select-program"
+              id="slim"
+              checked
+              value="slim"
+            />
+            <label class="form-row__label" for="slim">Похудение</label>
+          </div>
+          <div class="form-row">
+            <input
+              class="form-row__radio"
+              type="radio"
+              name="select-program"
+              id="pro"
+              value="pro"
+            />
+            <label class="form-row__label" for="pro">Набор массы</label>
+          </div>
+          <div class="form-row">
+            <input
+              class="form-row__radio"
+              type="radio"
+              name="select-program"
+              id="default"
+              value="default"
+            />
+            <label class="form-row__label" for="default"
+              >Не знаю (Нужен ваш совет)</label
+            >
+          </div>
+        </section>
+        <section class="contacts">
+          <h2 class="contacts__head">Контактные данные (владельца кота)</h2>
+          <div class="form-row">
+            <label class="form-row__label" for="email">Email:*</label>
+            <input
+              class="form-row__input"
+              id="email"
+              type="email"
+              name="email"
+              value="kuklachev@gmail.com"
+            />
+          </div>
+          <div class="form-row">
+            <label class="form-row__label" for="phone">Телефон:*</label>
+            <input
+              class="form-row__input"
+              id="phone"
+              type="tel"
+              name="phone"
+              value="8 (960) 900-60-90"
+            />
+          </div>
+        </section>
+        <section class="comments">
+          <h2 class="comments__head">Комментарий</h2>
+          <textarea class="comments__textarea" name="comments">
+Расскажите обо всех повадках кота</textarea
+          >
+        </section>
+        <section class="extra">
+          <h2 class="extra__head">Дополнительно</h2>
+          <div class="form-row">
+            <input
+              class="form-row__checkbox form-row__checkbox--checked"
+              type="checkbox"
+              id="sweetener"
+              name="extra"
+              checked
+              value="sweetener"
+            />
+            <label class="form-row__label" for="slim">Сахарозаменитель</label>
+          </div>
+          <div class="form-row">
+            <input
+              class="form-row__checkbox"
+              type="checkbox"
+              id="water"
+              name="extra"
+              value="water"
+            />
+            <label class="form-row__label" for="water">Питьевая вода</label>
+          </div>
+          <div class="form-row">
+            <input
+              class="form-row__checkbox"
+              type="checkbox"
+              name="extra"
+              id="milk"
+              value="milk"
+            />
+            <label class="form-row__label" for="milk">Молоко</label>
+          </div>
+          <div class="form-row">
+            <input
+              class="form-row__checkbox"
+              type="checkbox"
+              id="vitamins"
+              name="extra"
+              value="vitamins"
+            />
+            <label class="form-row__label" for="vitamins">Витамины</label>
+          </div>
+        </section>
+        <div class="submit-block">
+          <input
+            class="submit-block__button"
+            type="submit"
+            value="Отправить заявку"
+          />
+          <span class="submit-block__info">* — Обязательные поля</span>
+        </div>
+      </form>
+      <section class="location-block">
+        <address class="address">
+          <span class="address__text">
+            приглашаем к сотрудничеству дилеров!
+          </span>
+          <span class="address__info">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </span>
+        </address>
+        <div class="location-block__map"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="logo-footer">
+        <img
+          src="img/footer-logo.svg"
+          alt="cat energy"
+          width="128"
+          height="24"
+        />
+      </a>
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a
+            ><img src="img/icon_vkontakte.svg" alt="vk" width="22" height="16"
+          /></a>
+        </li>
+
+        <li class="socials-list__item">
+          <a
+            ><img
+              src="img/icon_instagram.svg"
+              alt="instagram"
+              width="16"
+              height="16"
+          /></a>
+        </li>
+        <li class="socials-list__item">
+          <a
+            ><img
+              src="img/icon_facebook.svg"
+              alt="facebook"
+              width="10"
+              height="16"
+          /></a>
+        </li>
+      </ul>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <img
+          class="copyright__logo"
+          src="img/html_academy_logo.svg"
+          alt="htmlacademy"
+          width="27"
+          height="34"
+        />
+      </a>
+    </footer>
+  </body>
+</html>
