@@ -37,11 +37,15 @@
     </header>
     <main class="main-container">
       <h1 class="form-head">Подбор программы</h1>
-      <form class="programm-form" action="https://echo.htmlacademy.ru">
-        <h2 class="programm-form__head">
+      <form
+        id="program-form"
+        class="program-form"
+        action="https://echo.htmlacademy.ru"
+      >
+        <h2 class="program-form__head">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </h2>
-        <section class="personal-data">
+        <fieldset form="program-form" class="personal-data">
           <div class="form-row">
             <label class="form-row__label" for="name">Имя:*</label>
             <input
@@ -72,8 +76,8 @@
               value="7"
             />
           </div>
-        </section>
-        <section class="select-program">
+        </fieldset>
+        <fieldset form="program-form" class="select-program">
           <div class="form-row">
             <input
               class="form-row__radio form-row__radio--checked"
@@ -107,9 +111,11 @@
               >Не знаю (Нужен ваш совет)</label
             >
           </div>
-        </section>
-        <section class="contacts">
-          <h2 class="contacts__head">Контактные данные (владельца кота)</h2>
+        </fieldset>
+        <fieldset form="program-form" class="contacts">
+          <legend class="contacts__head">
+            Контактные данные (владельца кота)
+          </legend>
           <div class="form-row">
             <label class="form-row__label" for="email">Email:*</label>
             <input
@@ -130,15 +136,15 @@
               value="8 (960) 900-60-90"
             />
           </div>
-        </section>
-        <section class="comments">
-          <h2 class="comments__head">Комментарий</h2>
+        </fieldset>
+        <fieldset form="program-form" class="comments">
+          <legend class="comments__head">Комментарий</legend>
           <textarea class="comments__textarea" name="comments">
 Расскажите обо всех повадках кота</textarea
           >
-        </section>
-        <section class="extra">
-          <h2 class="extra__head">Дополнительно</h2>
+        </fieldset>
+        <fieldset form="program-form" class="extra">
+          <fieldset class="extra__head">Дополнительно</fieldset>
           <div class="form-row">
             <input
               class="form-row__checkbox form-row__checkbox--checked"
@@ -148,7 +154,9 @@
               checked
               value="sweetener"
             />
-            <label class="form-row__label" for="slim">Сахарозаменитель</label>
+            <label class="form-row__label" for="sweetener"
+              >Сахарозаменитель</label
+            >
           </div>
           <div class="form-row">
             <input
@@ -180,7 +188,7 @@
             />
             <label class="form-row__label" for="vitamins">Витамины</label>
           </div>
-        </section>
+        </fieldset>
         <div class="submit-block">
           <input
             class="submit-block__button"
