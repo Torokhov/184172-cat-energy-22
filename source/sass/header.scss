@@ -1,0 +1,10 @@
+@import "variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $width-mobile;
+  padding: 11px 20px 17px 20px;
+  background-color: white;
+}
