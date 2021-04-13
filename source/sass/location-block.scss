@@ -1,0 +1,10 @@
+.location-block {
+  display: flex;
+  flex-direction: column;
+
+  &__map {
+    width: 320px;
+    min-height: 362px;
+    background: url("../img/map.jpg");
+  }
+}
