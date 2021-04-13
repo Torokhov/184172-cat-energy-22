@@ -1,7 +1,7 @@
 @import "mixins";
 
 .list-features {
-  list-style: none;
+  @include list;
   padding-left: 80px;
 
   &__item {
@@ -12,7 +12,7 @@
     position: relative;
 
     &:last-child {
-      margin-bottom: none;
+      margin-bottom: 0;
     }
 
     &::before {

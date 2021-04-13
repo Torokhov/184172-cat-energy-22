@@ -30,3 +30,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@mixin list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
