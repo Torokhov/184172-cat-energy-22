@@ -1,0 +1,11 @@
+@import "mixins";
+
+.socials-list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 63px;
+  padding: 0 70px;
+  border-bottom: 1px solid #d9d9d9;
+}
