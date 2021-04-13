@@ -1,0 +1,9 @@
+@import "variables";
+
+.base {
+  width: $width-mobile;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: $font-family-base;
+}

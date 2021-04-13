@@ -1,10 +1,8 @@
-@import "variables";
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $width-mobile;
+  box-sizing: border-box;
   padding: 11px 20px 17px 20px;
   background-color: white;
 }

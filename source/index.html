@@ -4,8 +4,13 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="base">
     <header class="header">
       <div class="logo-block">
         <a class="logo-block__icon">
@@ -37,15 +42,21 @@
     </header>
     <main class="main-container">
       <section class="head-block">
-        <h1 class="head-block__main">Функциональное питание для котов</h1>
-        <h2 class="head-block__secondary">Занялся собой? Займись котом!</h2>
-        <img
-          class="head-block__img"
-          src="img/cat-energy.png"
-          alt="cat-energy"
-          width="280"
-          height="270"
-        />
+        <div class="promo-block">
+          <h1 class="promo-block__main-head">
+            Функциональное питание для котов
+          </h1>
+          <h2 class="promo-block__secondary-head">
+            занялся собой? Займись котом!
+          </h2>
+          <img
+            class="promo-block__img"
+            src="img/cat-energy.png"
+            alt="cat-energy"
+            width="280"
+            height="270"
+          />
+        </div>
         <a class="head-block__button" href="!#">Подобрать программу</a>
       </section>
       <section class="program-block">
