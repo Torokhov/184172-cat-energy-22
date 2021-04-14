@@ -4,17 +4,17 @@
   height: 17px;
   box-sizing: border-box;
   border-style: none;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   background: none;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 7px;
     left: 0;
     width: 24px;
     height: 1px;
-    background-color: #000;
+    background-color: #000000;
   }
 }
