@@ -1,4 +1,5 @@
 @import "mixins";
+@import "variables";
 
 .list-features {
   @include list;
@@ -23,6 +24,6 @@
     left: -80px;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $green;
   }
 }

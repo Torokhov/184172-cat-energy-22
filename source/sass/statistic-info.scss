@@ -1,3 +1,5 @@
+@import "variables";
+
 .statistic-info {
   display: flex;
   justify-content: center;
@@ -5,7 +7,7 @@
   position: relative;
   width: 124px;
   min-height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $borderSecondaryColor;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -29,5 +31,5 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: $blockBackgroundColor;
 }

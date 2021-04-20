@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: $font-family-second;
-  color: #444444;
+  color: $blackLight;
   font-weight: 400;
   text-align: left;
 }
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #68b738;
+  background-color: $green;
   border: none;
   font-size: 16px;
   color: #ffffff;
