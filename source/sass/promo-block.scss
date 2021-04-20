@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixins";
+
+.promo-block {
+  position: relative;
+  min-height: 303px;
+  padding: 0 35px;
+  padding-top: 27px;
+  box-sizing: border-box;
+  background: $greenWithOpacity;
+}
+
+.promo-block__main-head {
+  @include head;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.promo-block__secondary-head {
+  @include head;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo-block__img {
+  position: absolute;
+  top: 168px;
+  left: 17px;
+}

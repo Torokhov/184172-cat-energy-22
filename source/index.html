@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-
-  <body>
+  <body class="base">
     <header class="header">
       <div class="logo-block">
         <a class="logo-block__icon">
@@ -37,15 +37,21 @@
     </header>
     <main class="main-container">
       <section class="head-block">
-        <h1 class="head-block__main">Функциональное питание для котов</h1>
-        <h2 class="head-block__secondary">Занялся собой? Займись котом!</h2>
-        <img
-          class="head-block__img"
-          src="img/cat-energy.png"
-          alt="cat-energy"
-          width="280"
-          height="270"
-        />
+        <div class="promo-block">
+          <h1 class="promo-block__main-head">
+            Функциональное питание для котов
+          </h1>
+          <h2 class="promo-block__secondary-head">
+            занялся собой? Займись котом!
+          </h2>
+          <img
+            class="promo-block__img"
+            src="img/cat-energy.png"
+            alt="cat-energy"
+            width="280"
+            height="270"
+          />
+        </div>
         <a class="head-block__button" href="!#">Подобрать программу</a>
       </section>
       <section class="program-block">
@@ -108,14 +114,16 @@
               <span class="statistic-info__name">затрачено времени</span>
             </article>
           </div>
-          <span class="statistic-total">Затраты на питание: 15 000 РУБ.</span>
+          <span class="statistic-block__total"
+            >Затраты на питание: 15 000 РУБ.</span
+          >
         </div>
         <div class="was-now-block">
           <img
             class="was-now-block__img"
             src="img/before-mobile.png"
             alt="кот до"
-            width="311"
+            width="280"
             height="232"
           />
           <div class="was-now-block__toggle toggle">
@@ -146,13 +154,12 @@
       </a>
       <ul class="socials-list">
         <li class="socials-list__item">
-          <a
+          <a href="https://vk.com/"
             ><img src="img/icon_vkontakte.svg" alt="vk" width="22" height="16"
           /></a>
         </li>
-
         <li class="socials-list__item">
-          <a
+          <a href="http://instagram.com/"
             ><img
               src="img/icon_instagram.svg"
               alt="instagram"
@@ -161,12 +168,12 @@
           /></a>
         </li>
         <li class="socials-list__item">
-          <a
+          <a href="https://www.facebook.com/"
             ><img
               src="img/icon_facebook.svg"
               alt="facebook"
-              width="10"
-              height="16"
+              width="22"
+              height="22"
           /></a>
         </li>
       </ul>

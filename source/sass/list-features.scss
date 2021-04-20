@@ -1,0 +1,29 @@
+@import "mixins";
+@import "variables";
+
+.list-features {
+  @include list;
+  padding-left: 80px;
+}
+
+.list-features__item {
+  @include text;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+  }
+}

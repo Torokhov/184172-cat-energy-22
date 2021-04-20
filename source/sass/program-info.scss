@@ -1,0 +1,36 @@
+@import "mixins";
+@import "variables";
+
+.program-info {
+  padding: 30px 20px 22px 20px;
+  background-color: #f2f2f2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-info__header {
+  @include head;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program-info__desc {
+  @include text;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid $borderMainColor;
+}
+
+.program-info__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}

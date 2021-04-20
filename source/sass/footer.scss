@@ -1,0 +1,8 @@
+@import "variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 20px 0 20px;
+  background-color: $footerBackgroundColor;
+}

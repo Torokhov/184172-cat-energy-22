@@ -1,0 +1,15 @@
+@import "mixins";
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 78px;
+  text-decoration: none;
+}
+
+.copyright__text {
+  @include text;
+  font-size: 16px;
+  line-height: 18px;
+}
