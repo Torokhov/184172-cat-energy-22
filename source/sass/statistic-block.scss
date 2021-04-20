@@ -3,17 +3,17 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 42px;
+}
 
-  &__info-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 34px;
-  }
+.statistic-block__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 34px;
+}
 
-  &__total {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.statistic-block__total {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
 }

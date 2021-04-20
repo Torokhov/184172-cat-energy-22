@@ -3,16 +3,16 @@
   justify-content: space-between;
   align-items: center;
   width: 192px;
+}
 
-  &__icon {
-    display: inline-block;
-    height: 38px;
-    width: 34px;
-  }
+.logo-block__icon {
+  display: inline-block;
+  height: 38px;
+  width: 34px;
+}
 
-  &__text-icon {
-    display: inline-block;
-    height: 18px;
-    width: 101px;
-  }
+.logo-block__text-icon {
+  display: inline-block;
+  height: 18px;
+  width: 101px;
 }

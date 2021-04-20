@@ -8,26 +8,26 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 3px;
+}
 
-  &__data {
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-  }
+.statistic-info__data {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 
-  &__name {
-    position: absolute;
-    padding: 0 10px;
-    top: 45px;
-    left: 18px;
-    width: 65px;
-    min-height: 19px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    background-color: #eaeaea;
-  }
+.statistic-info__name {
+  position: absolute;
+  padding: 0 10px;
+  top: 45px;
+  left: 18px;
+  width: 65px;
+  min-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: #eaeaea;
 }

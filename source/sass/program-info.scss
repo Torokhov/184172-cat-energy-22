@@ -8,29 +8,29 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &__header {
-    @include head;
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-  }
+.program-info__header {
+  @include head;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
 
-  &__desc {
-    @include text;
-    font-size: 14px;
-    line-height: 18px;
-    padding-bottom: 23px;
-    margin-bottom: 19px;
-    border-bottom: 1px solid #d9d9d9;
-  }
+.program-info__desc {
+  @include text;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+}
 
-  &__link {
-    font-size: 16px;
-    line-height: 16px;
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+.program-info__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
