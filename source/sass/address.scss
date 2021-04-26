@@ -5,16 +5,16 @@
   justify-content: space-between;
   padding: 28px 19px 28px 19px;
   font-style: normal;
+}
 
-  &__text {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.address__text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  &__info {
-    @include text;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.address__info {
+  @include text;
+  font-size: 14px;
+  line-height: 20px;
 }
