@@ -1,0 +1,35 @@
+@import "mixins";
+@import "variables";
+
+.extra-product-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.extra-product-card__head {
+  @include head;
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.extra-product-card__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 14px;
+  color: $blackLight;
+}
+
+.extra-product-card__button {
+  @include link;
+  @include button;
+  padding: 10px 0;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+@import "mixins";
+.extra-products {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.extra-products__head {
+  @include head;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 25px;
+  padding-bottom: 36px;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 38px;
+    width: 53px;
+    height: 2px;
+    background-color: $green;
+  }
+}
