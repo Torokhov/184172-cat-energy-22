@@ -7,6 +7,11 @@
   font-weight: 400;
 }
 
+@mixin link {
+  text-decoration: none;
+  color: #000000;
+}
+
 @mixin text {
   margin: 0;
   padding: 0;

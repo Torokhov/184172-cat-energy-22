@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+.description-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-block__head {
+  @include head;
+  width: 76px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  a {
+    @include link;
+  }
+}
+
+.description-block__spec {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-family-second;
+  font-size: 12px;
+  line-height: 16px;
+  color: $blackLight;
+}
