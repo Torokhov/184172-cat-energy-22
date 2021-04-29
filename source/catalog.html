@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
-  </head>
+    <link href="css/style.css" rel="stylesheet" />
 
-  <body>
+  <body class="base">
     <header class="header">
       <div class="logo-block">
         <a class="logo-block__icon">
@@ -23,10 +23,10 @@
       <nav class="main-nav">
         <button class="menu-toggle" aria-label="меню навигации"></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item">
@@ -36,7 +36,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="catalog-head">Каталог продукции</h1>
+      <h1 class="main-container__head">Каталог продукции</h1>
       <section class="products-block">
         <article class="product-card">
           <div class="product-card__wrapper">
@@ -297,7 +297,7 @@
         </p>
       </section>
       <section class="location-block">
-        <address class="address">
+        <address class="address address--gray">
           <span class="address__text">
             приглашаем к сотрудничеству дилеров!
           </span>
