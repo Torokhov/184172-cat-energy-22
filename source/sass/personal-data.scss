@@ -2,5 +2,16 @@
 
 .personal-data {
   @include fieldset;
+  width: 100%;
   border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 28px;
+  box-sizing: border-box;
+}
+
+.personal-data__row {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

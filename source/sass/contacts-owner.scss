@@ -1,0 +1,30 @@
+@import "mixins";
+@import "variables";
+
+.contacts-owner {
+  @include fieldset;
+
+  &__head {
+    @include legend;
+    margin-bottom: 35px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 15px;
+      width: 99px;
+      height: 2px;
+      background-color: $green;
+    }
+  }
+
+  &__row {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
