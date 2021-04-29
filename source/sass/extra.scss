@@ -3,28 +3,28 @@
 .extra {
   @include fieldset;
   margin-bottom: 15px;
+}
 
-  &__head {
-    @include legend;
-    margin-bottom: 39px;
-    position: relative;
+.extra__head {
+  @include legend;
+  margin-bottom: 39px;
+  position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      right: -20px;
-      top: 15px;
-      width: 136px;
-      height: 2px;
-      background-color: $green;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    width: 136px;
+    height: 2px;
+    background-color: $green;
   }
+}
 
-  &__row {
-    margin-bottom: 25px;
+.extra__row {
+  margin-bottom: 25px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
