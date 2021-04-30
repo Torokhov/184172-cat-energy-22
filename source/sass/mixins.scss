@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   font-family: $font-family-second;
-  color: $blackLight;
+  color: $specialDarkGray;
   font-weight: 400;
   text-align: left;
 }
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $green;
+  background-color: $basicGreen;
   border: none;
   font-size: 16px;
   font-family: $font-family-base;
@@ -62,8 +62,8 @@
   font-size: 16px;
   line-height: 18px;
   padding: 13px 15px;
-  color: $blackLight;
-  border: 1px solid #e7e7e7;
+  color: $specialDarkGray;
+  border: 1px solid $borderControlColor;
   text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $blackLight;
+  color: $specialDarkGray;
 }
 
 @mixin textarea {
@@ -81,6 +81,6 @@
   font-size: 16px;
   text-transform: uppercase;
   line-height: 18px;
-  color: $blackLight;
-  border: 1px solid #e7e7e7;
+  color: $specialDarkGray;
+  border: 1px solid $borderControlColor;
 }

@@ -1,7 +1,9 @@
+@import "variables";
+
 .product-card {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid $borderSeparatorColor;
   padding: 19px 20px 25px 20px;
 }
 

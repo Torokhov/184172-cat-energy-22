@@ -7,7 +7,7 @@
   position: relative;
   width: 124px;
   min-height: 56px;
-  border: 1px solid $borderSecondaryColor;
+  border: 1px solid $specialGray;
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -31,5 +31,5 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  background-color: $blockBackgroundColor;
+  background-color: $basicGray;
 }
