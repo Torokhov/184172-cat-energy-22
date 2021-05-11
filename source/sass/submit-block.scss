@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+
+.submit-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.submit-block__button {
+  @include button;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.submit-block__info {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 16px;
+}

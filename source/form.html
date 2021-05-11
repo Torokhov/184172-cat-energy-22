@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-
-  <body>
+  <body class="base">
     <header class="header">
       <div class="logo-block">
-        <a class="logo-block__icon">
+        <a class="logo-block__icon" href="index.html">
           <img src="img/logo-icon.svg" alt="логотип" width="34" height="38" />
         </a>
-        <a class="logo-block__text-icon">
+        <a class="logo-block__text-icon" href="index.html">
           <img
             src="img/logo-text.svg"
             alt="cat energy"
@@ -36,17 +36,17 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="form-head">Подбор программы</h1>
       <form
         id="program-form"
         class="program-form"
         action="https://echo.htmlacademy.ru"
       >
-        <h2 class="program-form__head">
+        <h1 class="program-form__main-head">Подбор программы</h1>
+        <h2 class="program-form__secondary-head">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </h2>
         <fieldset form="program-form" class="personal-data">
-          <div class="form-row">
+          <div class="personal-data__row form-row">
             <label class="form-row__label" for="name">Имя:*</label>
             <input
               class="form-row__input"
@@ -56,8 +56,8 @@
               placeholder="Барсик"
             />
           </div>
-          <div class="form-row">
-            <label class="form-row__label" for="weight">Вес (кг):*</label>
+          <div class="personal-data__row form-row">
+            <label class="form-row__label" for="weight">Вес&nbsp;(кг):*</label>
             <input
               class="form-row__input"
               id="weight"
@@ -66,8 +66,8 @@
               placeholder="7"
             />
           </div>
-          <div class="form-row">
-            <label class="form-row__label" for="age">Возраст (лет):</label>
+          <div class="personal-data__row form-row">
+            <label class="form-row__label" for="age">Возраст&nbsp;(лет):</label>
             <input
               class="form-row__input"
               id="age"
@@ -78,9 +78,9 @@
           </div>
         </fieldset>
         <fieldset form="program-form" class="select-program">
-          <div class="form-row">
+          <div class="select-program__row form-row">
             <input
-              class="form-row__radio form-row__radio--checked"
+              class="form-row__radio"
               type="radio"
               name="select-program"
               id="slim"
@@ -89,7 +89,7 @@
             />
             <label class="form-row__label" for="slim">Похудение</label>
           </div>
-          <div class="form-row">
+          <div class="select-program__row form-row">
             <input
               class="form-row__radio"
               type="radio"
@@ -99,7 +99,7 @@
             />
             <label class="form-row__label" for="pro">Набор массы</label>
           </div>
-          <div class="form-row">
+          <div class="select-program__row form-row">
             <input
               class="form-row__radio"
               type="radio"
@@ -112,11 +112,11 @@
             >
           </div>
         </fieldset>
-        <fieldset form="program-form" class="contacts">
-          <legend class="contacts__head">
+        <fieldset form="program-form" class="contacts-owner">
+          <legend class="contacts-owner__head">
             Контактные данные (владельца кота)
           </legend>
-          <div class="form-row">
+          <div class="contacts-owner__row form-row">
             <label class="form-row__label" for="email">Email:*</label>
             <input
               class="form-row__input"
@@ -126,7 +126,7 @@
               placeholder="kuklachev@gmail.com"
             />
           </div>
-          <div class="form-row">
+          <div class="contacts-owner__row form-row">
             <label class="form-row__label" for="phone">Телефон:*</label>
             <input
               class="form-row__input"
@@ -144,8 +144,8 @@
           >
         </fieldset>
         <fieldset form="program-form" class="extra">
-          <fieldset class="extra__head">Дополнительно</fieldset>
-          <div class="form-row">
+          <legend class="extra__head">Дополнительно</legend>
+          <div class="extra__row form-row">
             <input
               class="form-row__checkbox form-row__checkbox--checked"
               type="checkbox"
@@ -158,7 +158,7 @@
               >Сахарозаменитель</label
             >
           </div>
-          <div class="form-row">
+          <div class="extra__row form-row">
             <input
               class="form-row__checkbox"
               type="checkbox"
@@ -168,7 +168,7 @@
             />
             <label class="form-row__label" for="water">Питьевая вода</label>
           </div>
-          <div class="form-row">
+          <div class="extra__row form-row">
             <input
               class="form-row__checkbox"
               type="checkbox"
@@ -178,7 +178,7 @@
             />
             <label class="form-row__label" for="milk">Молоко</label>
           </div>
-          <div class="form-row">
+          <div class="extra__row form-row">
             <input
               class="form-row__checkbox"
               type="checkbox"
@@ -199,7 +199,7 @@
         </div>
       </form>
       <section class="location-block">
-        <address class="address">
+        <address class="address address--gray">
           <span class="address__text">
             приглашаем к сотрудничеству дилеров!
           </span>

@@ -1,10 +1,15 @@
 @import "mixins";
+@import "variables";
 
 .address {
   display: flex;
   justify-content: space-between;
   padding: 28px 19px 28px 19px;
   font-style: normal;
+
+  &--gray {
+    background-color: $footerBackgroundColor;
+  }
 }
 
 .address__text {

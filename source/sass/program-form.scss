@@ -1,0 +1,37 @@
+@import "mixins";
+
+.program-form {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 32px 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.program-form__main-head {
+  @include head;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  margin-bottom: 37px;
+}
+
+.program-form__secondary-head {
+  @include head;
+  padding: 0 20px;
+  margin-bottom: 39px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-form .select-program {
+  margin-bottom: 26px;
+}
+
+.program-form .extra {
+  margin-bottom: 15px;
+}
+
+.program-form .personal-data {
+  margin-bottom: 28px;
+}

@@ -1,0 +1,14 @@
+@import "mixins";
+
+.select-program {
+  @include fieldset;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.select-program__row {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

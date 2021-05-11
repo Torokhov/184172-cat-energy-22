@@ -1,0 +1,21 @@
+@import "mixins";
+
+.form-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-row__label {
+  @include label;
+
+  &:first-child {
+    margin-right: 12px;
+  }
+}
+
+.form-row__input {
+  @include input;
+  flex-grow: 1;
+  width: 0;
+}

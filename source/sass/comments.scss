@@ -1,0 +1,27 @@
+@import "mixins";
+
+.comments {
+  @include fieldset;
+}
+
+.comments__head {
+  @include legend;
+  margin-bottom: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    width: 158px;
+    height: 2px;
+    background-color: $green;
+  }
+}
+
+.comments__textarea {
+  @include textarea;
+
+  height: 150px;
+}
