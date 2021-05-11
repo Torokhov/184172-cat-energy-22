@@ -4,19 +4,14 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="base">
     <header class="header">
       <div class="logo-block">
-        <a class="logo-block__icon">
+        <a class="logo-block__icon" href="index.html">
           <img src="img/logo-icon.svg" alt="логотип" width="34" height="38" />
         </a>
-        <a class="logo-block__text-icon">
+        <a class="logo-block__text-icon" href="index.html">
           <img
             src="img/logo-text.svg"
             alt="cat energy"
@@ -50,7 +45,10 @@
         <h2 class="program-form__secondary-head">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </h2>
-        <fieldset form="program-form" class="personal-data">
+        <fieldset
+          form="program-form"
+          class="personal-data personal-data-wrapper"
+        >
           <div class="personal-data__row form-row">
             <label class="form-row__label" for="name">Имя:*</label>
             <input
@@ -82,7 +80,10 @@
             />
           </div>
         </fieldset>
-        <fieldset form="program-form" class="select-program">
+        <fieldset
+          form="program-form"
+          class="select-program select-program-wrapper"
+        >
           <div class="select-program__row form-row">
             <input
               class="form-row__radio"
@@ -148,7 +149,7 @@
 Расскажите обо всех повадках кота</textarea
           >
         </fieldset>
-        <fieldset form="program-form" class="extra">
+        <fieldset form="program-form" class="extra extra-wrapper">
           <legend class="extra__head">Дополнительно</legend>
           <div class="extra__row form-row">
             <input
